@@ -20,3 +20,6 @@ html,body,#app {
 .el-tag {
   margin: 0 10px ;
 }
+.ql-editor {
+  min-height: 300px;
+}

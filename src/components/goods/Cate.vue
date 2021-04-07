@@ -292,7 +292,7 @@ export default {
     async showEditCate(id) {
       this.getParentCateList()
       const { data: res } = await this.$http.get('categories/' + id)
-      console.log(res)
+      // console.log(res)
       if (res.meta.status !== 200) {
         return this.$message.error('查询失败')
       }
@@ -303,7 +303,7 @@ export default {
     editCate() {
       this.$refs.addCateFormRef.validate(async valid => {
         if (!valid) return
-        console.log(this.addCateForm)
+        // console.log(this.addCateForm)
         const { data: res } = await this.$http.put(
           `categories/${this.addCateForm.cat_id}`,
           {
